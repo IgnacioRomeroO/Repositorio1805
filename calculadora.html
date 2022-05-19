@@ -7,17 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <script>
-        var numero1 = parseInt(prompt("Ingrese el primer valor: "))
-        var numero2 = parseInt(prompt("Ingrese el segundo valor: "))
+        var numero1 = parseInt(prompt("Ingrese el primer valor: "));
+        var numero2 = parseInt(prompt("Ingrese el segundo valor: "));
 
         function Calculadora() {
-            let menu = paseInt(prompt("\n [1] Para Sumar \n [2] Para Restar \n [3] Para Sumar y Restar"))
+            let menu = parseInt(prompt("\n [1] Para Sumar \n [2] Para Restar \n [3] Para Sumar y Restar"));
 
-            //if(menu == 1):
-            // let ResultadoSuma = (numero1 + numero2)
-            // if(menu == 2)
+            if (menu == 1) {
+                let ResultadoSuma = (numero1 + numero2)
+                console.log(ResultadoSuma)
+            }
+            if (menu == 2) {
+                let ResultadoResta = (numero1 - numero2)
+                console.log(ResultadoResta)
+            }
+            if (menu == 3) {
+
+            }
 
         }
+
+        Calculadora()
     </script>
 </head>
 
