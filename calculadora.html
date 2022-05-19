@@ -7,27 +7,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <script>
+        //Variables
         var numero1 = parseInt(prompt("Ingrese el primer valor: "));
         var numero2 = parseInt(prompt("Ingrese el segundo valor: "));
-
+        // Función
         function Calculadora() {
             let menu = parseInt(prompt("\n [1] Para Sumar \n [2] Para Restar \n [3] Para Sumar y Restar"));
-
+            //suma
             if (menu == 1) {
                 let ResultadoSuma = (numero1 + numero2)
                 console.log(ResultadoSuma)
             }
+            //resta
             if (menu == 2) {
                 let ResultadoResta = (numero1 - numero2)
                 console.log(ResultadoResta)
             }
+            //suma y resta
             if (menu == 3) {
+                let SumaResta = ((numero1 + numero2), (numero1 - numero2))
+                console.log(SumaResta)
 
             }
 
         }
 
         Calculadora()
+
+        // En la página.
+
+        document.write("******Calculadora******")
+        document.write("<br>")
+        document.write("***********************")
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        document.write("[1] Para Suma.")
+        document.write("<br>")
+        document.write("[2] Para Resta.")
+        document.write("<br>")
+        document.write("[3] Para Sumar y Restar")
+        document.write("<br>")
+        document.write("<br>")
+        document.write("Primer número:")
+        document.write("<br>")
+        document.write(numero1)
+        document.write("<br>")
+        document.write("Segundo número")
+        document.write("<br>")
+        document.write(numero2)
+        document.write("<br>")
+        document.write("Resultado")
+        document.write("<br>")
+        document.write("<br>")
     </script>
 </head>
 
